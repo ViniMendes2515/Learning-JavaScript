@@ -1,0 +1,101 @@
+$primary-color: rgb(206, 16, 63);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@mixin theme($theme:rgb(206, 16, 63)) {
+    background: $theme;
+}
+
+@mixin center {
+    margin: auto
+}
+
+body{
+    @include theme;
+    font-size: 2rem;
+    font-family: "Archivo",sans-serif;
+    line-height: 3rem
+}
+
+.container{
+    @include center;
+    
+    max-width: 640px;
+    margin-top: 5rem;
+    padding: 20px;
+    background-color: white;
+    border-radius: 1.2rem;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title-3{
+    padding-top: 1rem;
+    font-size: 1.2em;
+}
+.title-2{
+    padding-top: 1.6rem;
+    font-size: 1.7em;
+}
+.title-1{
+    padding: 2rem 0;
+    font-size: 2em;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+form label{
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 0.8rem;
+}
+
+.input:focus{
+    outline: auto red;
+}
+
+form button{
+    color: #fff;
+    background-color: $primary-color;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.paragrafo-resultado, .bad{
+    background-color: aquamarine;
+    margin-top: 1rem;
+    padding: 1.4rem 0;
+    text-align: center;
+}
+
+.bad{
+    text-align: center;
+    background-color: rgba(255, 85, 85, 0.842);
+}
+
