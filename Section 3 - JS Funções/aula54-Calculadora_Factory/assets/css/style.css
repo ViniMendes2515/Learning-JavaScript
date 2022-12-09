@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #611125;
+  font-size: 2rem;
+  font-family: "Archivo", sans-serif;
+  line-height: 3rem;
+}
+
+.container {
+  margin: auto;
+  max-width: 640px;
+  margin-top: 5rem;
+  padding: 20px;
+  background-color: white;
+  border-radius: 1.2rem;
+}
+
+h1 {
+  font-size: 2em;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.calculadora {
+  margin-left: 17%;
+  width: 380px;
+}
+
+input {
+  margin-left: 17.4%;
+  width: 61.7%;
+  height: 50px;
+  text-align: right;
+  font-size: 2.5em;
+}
+
+button.btn {
+  font-family: Archivo;
+  font-size: 1em;
+  background: #b1b1b1;
+  margin-top: 1rem;
+  border-radius: 0.2rem;
+  color: rgb(0, 0, 0);
+  width: 90px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.btn:hover {
+  transition: 300ms;
+  background: #611125;
+  color: #fff;
+}
+
+.btn-eq:hover {
+  transition: 300ms;
+  background: #1330b4;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
